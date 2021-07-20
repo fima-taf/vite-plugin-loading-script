@@ -29,5 +29,13 @@
   "peerDependencies": {
     "rollup": "^2.53.1",
     "vite": "^2.4.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fima-taf/vite-plugin-loading-script.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fima-taf/vite-plugin-loading-script/issues"
+  },
+  "homepage": "https://github.com/fima-taf/vite-plugin-loading-script#readme"
 }
