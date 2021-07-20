@@ -1,0 +1,33 @@
+{
+  "name": "vite-plugin-loading-script",
+  "version": "1.0.0",
+  "description": "Vite plugin for wrapping and loading the generated files/assets with a single script into the DOM instead of `index.html.`",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts",
+    "test": "echo Missing tests",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite",
+    "loading-script",
+    "plugin",
+    "single-loading",
+    "single-file-loading"
+  ],
+  "author": "fima.apps@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "hash-sum": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/hash-sum": "^1.0.0",
+    "tsup": "^4.12.5",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "rollup": "^2.53.1",
+    "vite": "^2.4.2"
+  }
+}
