@@ -11,6 +11,11 @@ This plugin will generate a single script that will load all the other files/ass
 It's basically a 'wrapping' script that uses `iife` and will add the `<script>` and `<link>` tags into any other app that Vite by default generates only into its `index.html` file.
 
 
+## Installation
+```
+npm install vite-plugin-loading-script -D
+```
+
 ## How to use?
 ```js
 import { defineConfig } from "vite"
