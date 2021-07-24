@@ -33,7 +33,7 @@ const generateLoadingScript = (bundle: OutputBundle, externalSource?: string): s
 				scriptCode +=	`${varName}.setAttribute('href', '${filename}');`
 				scriptCode +=	`${varName}.setAttribute('rel', 'modulepreload');`
       }
-    } else if (bundle[key].type === 'asset') {
+    } else if (bundle[key].type === 'asset' && bundle[key].fileName.endsWith('.css')) {
 			scriptCode += `const ${varName} = document.createElement('link');`
 			scriptCode +=	`${varName}.setAttribute('href', '${filename}');`
 			scriptCode +=	`${varName}.setAttribute('rel', 'stylesheet');`
