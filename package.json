@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-loading-script",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vite plugin for wrapping and loading the generated files/assets with a single script into the DOM instead of `index.html.`",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
