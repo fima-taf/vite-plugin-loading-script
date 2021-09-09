@@ -28,6 +28,7 @@ const generateLoadingScript = (bundle: OutputBundle, externalSource?: string): s
       if (chunk.isEntry) {
         scriptCode += `const ${varName} = document.createElement('script');`
 				scriptCode +=	`${varName}.setAttribute('src', '${filename}');`
+				scriptCode +=	`${varName}.setAttribute('type', 'module');`
       } else {
         scriptCode += `const ${varName} = document.createElement('link');`
 				scriptCode +=	`${varName}.setAttribute('href', '${filename}');`
