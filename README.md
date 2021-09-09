@@ -31,7 +31,9 @@ export default defineConfig({
 ```ts
 {
   externalSrc: string, // Will prefix a url to load from.
-  fileName: 'app' // app.[hash].js
+  fileName: 'app', // app.[hash].js
+  crossorigin: false, // Will add the 'crossorigin' attribute to the entry script
+  crossoriginVal: string // The value to set for the 'crossorigin' attribute
 }
 ```
 
