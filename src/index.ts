@@ -37,6 +37,8 @@ const generateLoadingScript = (bundle: OutputBundle, externalSource?: string): s
 			scriptCode += `const ${varName} = document.createElement('link');`
 			scriptCode +=	`${varName}.setAttribute('href', '${filename}');`
 			scriptCode +=	`${varName}.setAttribute('rel', 'stylesheet');`
+		} else {
+			continue
 		}
 		scriptCode +=	`parent.appendChild(${varName});`
 		counter++
