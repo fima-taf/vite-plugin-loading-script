@@ -23,17 +23,20 @@ import vue from "@vitejs/plugin-vue"
 import { loadingScript } from 'vite-plugin-loading-script'
 
 export default defineConfig({
-	plugins: [vue(), loadingScript(/** options **/)]
+	plugins: [vue(), loadingScript({/** options **/})]
 })
 ```
+
+Add the generated script into your target application's `index.html`.
+* Make sure the assets folder is located at project's root folder, or use the `externalSrc` option to change the location.
 
 ## Options
 ```ts
 {
-  externalSrc: string, // Will prefix a url to load from.
-  fileName: 'app', // app.[hash].js
-  crossorigin: false, // Will add the 'crossorigin' attribute to the entry script
-  crossoriginVal: string // The value to set for the 'crossorigin' attribute
+  externalSrc?: string, // Will prefix a path or a url to point to the assets folder.
+  fileName?: 'app', // the generated script name. default - app.[hash].js
+  crossorigin?: false, // Will add the 'crossorigin' attribute to the entry script
+  crossoriginVal?: string // The value to set for the 'crossorigin' attribute
 }
 ```
 
